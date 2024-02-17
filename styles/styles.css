@@ -13,3 +13,7 @@ body{
 .primary-color{
     color: #1DD100CC;
 }
+.section-title{
+    font-weight: bold;
+    font-size: 40px;
+}
