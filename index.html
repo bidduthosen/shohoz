@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- header sections -->
-    <header class="w-[1340px] mx-auto">
+    <header class="w-[1340px] mx-auto px-4">
       <!-- navbar -->
       <nav class="navbar bg-base-100">
         <div class="navbar-start">
@@ -94,7 +94,7 @@
       </div>
     </header>
     <!-- main -->
-    <main class="w-[1340px] mx-auto mb-32">
+    <main class="w-[1340px] mx-auto px-4 mb-32">
       <section>
         <div class="w-2/5 mx-auto pt-16 text-center">
           <h1 class="section-title">Best offers for you</h1>
@@ -154,7 +154,7 @@
 
         <div class="grid grid-cols-8 rounded-xl bg-white pt-16">
             <!-- --------------------------------shohoz paribshan part------------------------------- -->
-          <div class="col-span-6 ">
+          <div class="col-span-8 lg:col-span-6 ">
             <div class="flex justify-between items-center px-5">
               <div class="flex justify-center items-center">
                 <img src="./images/bus-logo.png" class="h-10 pr-3" alt="" />
@@ -193,7 +193,7 @@
 
 
             <!-- ------------ --------------550 taka per seat -------------------------------- -->
-            <div class="col-span-2 text-center flex justify-center items-center h-full flex-col border-l-2 border-dashed border-[#1DD100CC]" >
+            <div class="col-span-8 lg:col-span-2 text-center flex justify-center items-center h-full flex-col border-l-2 border-dashed border-[#1DD100CC] pb-5 md:pb-0" >
                 <img src="./images/fare.png" class="w-11" alt="" />
                 <h4 class="font-semibold text-3xl mt-4"><span>550</span> Taka</h4>
                 <p class="font-medium text-xl">Per Seat</p>
@@ -214,12 +214,113 @@
                         <h3 class="text-base ml-3 primary-color">Selected</h3>
                     </div>
                 </div>
+
+                <!-- staring -->
+                <div>
+                    <div class="gap-6 mt-4">
+                        <div class="flex justify-end">
+                            <img class="bg-gray-300 py-4 text-center rounded-md px-[50px] " src="./images/staring.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex gap-6 mt-4">
+                        <h2 class=" py-4">A</h2>
+                        <div class="grid grid-cols-2 lg:grid-cols-4 gap-16 flex-1">
+                            <h5 class="bg-gray-300 py-4 text-center rounded-md">A1</h5>
+                            <h5 class="bg-gray-300 py-4 text-center rounded-md">A2</h5>
+                            <h5 class="bg-gray-300 py-4 text-center rounded-md">A3</h5>
+                            <h5 class="bg-gray-300 py-4 text-center rounded-md">A4</h5>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 mt-4">
+                        <h2 class=" py-4">B</h2>
+                        <div class="grid grid-cols-2 lg:grid-cols-4 gap-16 flex-1">
+                            <h5 class="bg-gray-300 py-4 text-center rounded-md">B1</h5>
+                            <h5 class="bg-gray-300 py-4 text-center rounded-md">B2</h5>
+                            <h5 class="bg-gray-300 py-4 text-center rounded-md">B3</h5>
+                            <h5 class="bg-gray-300 py-4 text-center rounded-md">B4</h5>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 mt-4">
+                        <h2 class=" py-4">C</h2>
+                        <div class="grid grid-cols-2 lg:grid-cols-4 gap-16 flex-1">
+                            <h5 class="bg-gray-300 py-4 text-center rounded-md">C1</h5>
+                            <h5 class="bg-gray-300 py-4 text-center rounded-md">C2</h5>
+                            <h5 class="bg-gray-300 py-4 text-center rounded-md">C3</h5>
+                            <h5 class="bg-gray-300 py-4 text-center rounded-md">C4</h5>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 mt-4">
+                        <h2 class=" py-4">D</h2>
+                        <div class="grid grid-cols-2 lg:grid-cols-4 gap-16 flex-1">
+                            <h5 class="bg-gray-300 py-4 text-center rounded-md">D1</h5>
+                            <h5 class="bg-gray-300 py-4 text-center rounded-md">D2</h5>
+                            <h5 class="bg-gray-300 py-4 text-center rounded-md">D3</h5>
+                            <h5 class="bg-gray-300 py-4 text-center rounded-md">D4</h5>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
 
             <!-------------------------------- Select Your Seat second---------------------- -->
             <div class="col-span-12 lg:col-span-5  border-l-2 border-dashed border-gray-400 mt-5 pl-5">
                 <h3 class="text-2xl font-semibold border-b-2 border-gray-300 border-dashed pb-4">Select Your Seat</h3>
+                <div class=" bg-[#F7F8F8] flex justify-between items-center border-b-2 border-gray-300 border-dashed px-5 py-4 rounded-t-xl mt-5">
+                    <h3 class="text-base">Seat  <span class="bg-[#1DD100] rounded-md px-2">0</span></h3>
+                    <h3 class="text-base">Class</h3>
+                    <h3 class="text-base">Price</h3>
+                </div>
+                <div>
+                    <div class=" bg-[#F7F8F8] flex justify-between items-center px-5 py-4">
+                        <h3 class="text-base">C2</h3>
+                        <h3 class="text-base">Economoy</h3>
+                        <h3 class="text-base">550</h3>
+                    </div>
+                </div>
+                <div class=" bg-[#F7F8F8] flex justify-between items-center px-5 py-6 border-t-2 border-gray-300">
+                    <h3 class="text-base font-bold">Total Price</h3>
+                    <h3 class="text-base font-bold">BDT 1100</h3>
+                </div>
+                <!-- input field -->
+                <div class="px-5 bg-[#F7F8F8]">
+                    <div class="join w-full">
+                        <input class="input input-bordered join-item w-full" placeholder="Email"/>
+                        <button class="btn join-item rounded-r-xl bg-[#1DD100] text-white">Apply</button>
+                      </div>
+                </div>
+                <div class=" bg-[#F7F8F8] flex justify-between items-center px-5 py-6 rounded-b-md ">
+                    <h3 class="text-base font-bold">Grand Total</h3>
+                    <h3 class="text-base font-bold">BDT 1100</h3>
+                </div>
+
+                <!-- form -->
+                <form>
+                    <label class="form-control w-full">
+                        <div class="label">
+                          <span class="label-text text-sm font-bold pt-3">Passenger Name*</span>
+                        </div>
+                        <input type="text" placeholder="Enter your Name" class="input input-bordered w-full" />
+                    </label>
+                    <label class="form-control w-full">
+                        <div class="label">
+                          <span class="label-text text-sm font-bold pt-3">Phone Number*</span>
+                        </div>
+                        <input type="number" placeholder="Enter your Phone" class="input input-bordered w-full"/>
+                    </label>
+                    <label class="form-control w-full">
+                        <div class="label">
+                          <span class="label-text text-sm font-bold pt-3">Email ID</span>
+                        </div>
+                        <input type="email" placeholder="Enter your email Address" class="input input-bordered w-full" />
+                    </label>
+                    <button class="btn join-item rounded-r-xl bg-[#1DD100] text-white w-full mt-4">Next</button>
+                </form>
+
+                <div class=" bg-[#F7F8F8] flex justify-around items-center px-5 py-6 ">
+                    <h3 class="text-base underline">Terms and Conditions</h3>
+                    <h3 class="text-base underline">Cancellation Policy</h3>
+                </div>
             </div>
         </div>
       </section>
