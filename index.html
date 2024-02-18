@@ -408,7 +408,32 @@
                         </div>
                         <input type="email" placeholder="Enter your email Address" class="input input-bordered w-full" />
                     </label>
-                    <button class="btn join-item rounded-r-xl bg-[#1DD100] text-white w-full mt-4">Next</button>
+                    <!-- modal start -->
+                    <div>
+                      <!-- The button to open modal -->
+                      <label for="my_modal_6" class="btn join-item rounded-r-xl bg-[#1DD100] text-white w-full mt-4">Next</label>
+    
+                      <!-- Put this part before </body> tag -->
+                      <input type="checkbox" id="my_modal_6" class="modal-toggle " />
+                      <div class="modal" role="dialog">
+                        <div class="modal-box ">
+                          <div class="flex justify-center items-center flex-col text-center space-y-3">
+                            <img src="./images/success.png" alt="">
+                            <h3 class="text-xl font-bold text-[#27AE60]">Success</h3>
+                            <h3 class="font-medium text-base">Thank you for Booking Our Bus Seats. 
+                              <br>
+                              We are working hard to find the best service and deals for you</h3>
+                              <p class="font-light text-sm">Shortly you will find a confirmation in your email.</p>
+                              <button class="btn join-item rounded-r-xl bg-[#1DD100] text-white px-7">Continue</button>
+                              
+                          </div>
+                          <div class="modal-action">
+                            <label for="my_modal_6" class="btn">X</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- modal End -->
                 </form>
 
                 <div class=" bg-[#F7F8F8] flex justify-around items-center px-5 py-6 ">
