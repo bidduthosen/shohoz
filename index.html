@@ -276,33 +276,30 @@
             <div class="col-span-12 lg:col-span-5  border-l-2 border-dashed border-gray-400 mt-5 pl-5">
                 <h3 class="text-2xl font-semibold border-b-2 border-gray-300 border-dashed pb-4">Select Your Seat</h3>
                 <div class=" bg-[#F7F8F8] flex justify-between items-center border-b-2 border-gray-300 border-dashed px-5 py-4 rounded-t-xl mt-5">
-                    <h3 class="text-base">Seat  <span id="seat-count" class="bg-[#1DD100] rounded-md px-2">0</span></h3>
-                    <h3 class="text-base">Class</h3>
-                    <h3 class="text-base">Price</h3>
+                    <h3 class="text-base font-bold">Seat  <span id="seat-count" class="bg-[#1DD100] rounded-md px-2">0</span></h3>
+                    <h3 class="text-base font-bold mr-4">Class</h3>
+                    <h3 class="text-base font-bold">Price</h3>
                 </div>
                 <!-- -------------------------------select-seat-container -------------------->
                 <div id="select-seat-container">
 
-                  <!-- <div class=" bg-[#F7F8F8] flex justify-between items-center px-5 py-4">
-                    <h3 class="text-base">${perSeat}</h3>
-                    <h3 class="text-base">Economoy</h3>
-                    <h3 class="text-base">550</h3>
-                    </div> -->
                 </div>
                 <div class=" bg-[#F7F8F8] flex justify-between items-center px-5 py-6 border-t-2 border-gray-300">
                     <h3 class="text-base font-bold">Total Price</h3>
-                    <h3 class="text-base font-bold">BDT 1100</h3>
+
+                    <!-- --------------------- total price ------------------>
+                    <h3 class="text-base font-bold">BDT <span id="total-price">00</span></h3>
                 </div>
                 <!-- input field -->
                 <div class="px-5 bg-[#F7F8F8]">
                     <div class="join w-full">
-                        <input class="input input-bordered join-item w-full" placeholder="Email"/>
+                        <input type="text" class="input input-bordered join-item w-full" placeholder="Have any copupon?"/>
                         <button class="btn join-item rounded-r-xl bg-[#1DD100] text-white">Apply</button>
                       </div>
                 </div>
                 <div class=" bg-[#F7F8F8] flex justify-between items-center px-5 py-6 rounded-b-md ">
                     <h3 class="text-base font-bold">Grand Total</h3>
-                    <h3 class="text-base font-bold">BDT 1100</h3>
+                    <h3 class="text-base font-bold">BDT <span id="grand-total">00</span></h3>
                 </div>
 
                 <!-- form -->
