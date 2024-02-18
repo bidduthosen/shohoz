@@ -26,6 +26,16 @@ for(let index = 0; index <allSeatContainer.length ; index++){
                             <h3 id="par-seat-price" class="text-base">550</h3>
                         </div>`;
       selectSeatContainer.appendChild(div);
+      allSeatList.classList.remove('bg-gray-300')
+      allSeatList.classList.add('bg-[#1DD100]', 'text-white')
         
     })
-}
+};
+
+
+// grand total--------------------
+
+document.getElementById('coupon-apply-btn').addEventListener('click', function(){
+    const couponInputField = document.getElementById('coupon-input-field').value;
+    console.log(couponInputField)
+})
