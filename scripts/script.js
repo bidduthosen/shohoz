@@ -70,9 +70,12 @@ document.getElementById('coupon-apply-btn').addEventListener('click', function()
     // coupon container
     const couponContainer = document.getElementById('coupon-container');
 
-
     if(couponInputText === 'NEW15'){
-       const  discountPrice = totalPrice * 15 / 100;
+         const  discountPrice = totalPrice * 15 / 100;
+
+        //  discount price set
+        setDiscountPriceById('discount-price', discountPrice);
+
        grandTotal.innerText = totalPrice - discountPrice;
        couponContainer.classList.add('hidden')
         document.getElementById('coupon-input-field').value = "";
@@ -80,6 +83,10 @@ document.getElementById('coupon-apply-btn').addEventListener('click', function()
     }
     else if(couponInputText === 'COUPLE20'){
         const  discountPrice = totalPrice * 20 / 100;
+
+        // discount price set
+        setDiscountPriceById('discount-price', discountPrice);
+
         grandTotal.innerText = totalPrice - discountPrice;
         couponContainer.classList.add('hidden')
         document.getElementById('coupon-input-field').value = "";
