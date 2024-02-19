@@ -385,7 +385,7 @@
                 <div id="coupon-container" class="px-5 bg-[#F7F8F8]">
                     <div class="join w-full">
                         <input id="coupon-input-field" type="text" class="input input-bordered join-item w-full" placeholder="Have any coupon?"/>
-                        <button id="coupon-apply-btn" class="btn join-item rounded-r-xl bg-[#1DD100] text-white">Apply</button>
+                        <button id="coupon-apply-btn" class="btn join-item rounded-r-xl bg-[#1DD100] text-white" disabled>Apply</button>
                       </div>
                 </div>
                 <div class=" bg-[#F7F8F8] flex justify-between items-center px-5 py-6 rounded-b-md ">
@@ -403,9 +403,9 @@
                     </label>
                     <label class="form-control w-full">
                         <div class="label">
-                          <span class="label-text text-sm font-bold pt-3">Phone Number*</span>
+                          <span  class="label-text text-sm font-bold pt-3">Phone Number*</span>
                         </div>
-                        <input type="number" placeholder="Enter your Phone" class="input input-bordered w-full"/>
+                        <input id="phone-number" type="number" placeholder="Enter your Phone" class="input input-bordered w-full"/>
                     </label>
                     <label class="form-control w-full">
                         <div class="label">
@@ -416,7 +416,7 @@
                     <!-- modal start -->
                     <div>
                       <!-- The button to open modal -->
-                      <label for="my_modal_6" class="btn join-item rounded-r-xl bg-[#1DD100] text-white w-full mt-4">Next</label>
+                      <label id="next-btn" for="my_modal_6" class="btn join-item rounded-r-xl bg-[#1DD100] text-white w-full mt-4">Next</label>
     
                       <!-- Put this part before </body> tag -->
                       <input type="checkbox" id="my_modal_6" class="modal-toggle " />

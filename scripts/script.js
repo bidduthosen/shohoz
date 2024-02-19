@@ -9,6 +9,11 @@ for(let index = 0; index < allSeatContainer.length ; index++){
     const allSeatList = allSeatContainer[index];
     allSeatList.addEventListener('click', function(){
 
+        // apply button set conditions
+        if(count > 3){
+            const applyBtn = document.getElementById('coupon-apply-btn');
+            applyBtn.removeAttribute('disabled', false)
+        };
         
         // You cannot select a button repeatedly
         if(orderSeatList.includes(allSeatList.innerText) === false){
