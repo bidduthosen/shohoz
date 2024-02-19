@@ -4,38 +4,55 @@ const totalSeatNumber = document.getElementById('total-seat');
 
 let count = 1;
 let perSeatPrice = 550;
+let orderSeatList = [];
 for(let index = 0; index <allSeatContainer.length ; index++){
     const allSeatList = allSeatContainer[index];
     allSeatList.addEventListener('click', function(){
-        
-        if(count <= 4){
-            const seat = document.getElementById('seat-count').innerText = count;
-            // total seat
-            totalSeatNumber.innerText = allSeatContainer.length - count;
-            
-            
-            const totalPriceContainer = document.getElementById('total-price');
-            totalPriceContainer.innerText = perSeatPrice * seat;
-            
-            // grand total
-            const grandTotal = document.getElementById('grand-total');
-            grandTotal.innerText = perSeatPrice * seat;
-            
-            // per seat number 
-            const perSeatName = allSeatList.innerText;
-            
-            const selectSeatContainer = document.getElementById('select-seat-container');
-            const div = document.createElement('div');
-            div.innerHTML = `<div class=" bg-[#F7F8F8] flex justify-between items-center px-5 py-4">
-                                  <h3 class="text-base">${perSeatName}</h3>
-                                  <h3 class="text-base ml-8">Economoy</h3>
-                                  <h3 id="par-seat-price" class="text-base">550</h3>
-                              </div>`;
-            selectSeatContainer.appendChild(div);
-            allSeatList.classList.remove('bg-gray-300')
-            allSeatList.classList.add('bg-[#1DD100]', 'text-white');
+
+        if(orderSeatList.includes(allSeatList.innerText) === false){
+            if(count <= 4){
+                const seat = document.getElementById('seat-count').innerText = count;
+                // total seat
+                totalSeatNumber.innerText = allSeatContainer.length - count;
+                
+                
+                const totalPriceContainer = document.getElementById('total-price');
+                totalPriceContainer.innerText = perSeatPrice * seat;
+                
+                // grand total
+                const grandTotal = document.getElementById('grand-total');
+                grandTotal.innerText = perSeatPrice * seat;
+                
+                // per seat number 
+                const perSeatName = allSeatList.innerText;
+    
+                // console.log(perSeatName)
+                // console.log('includs',orderSeatList)
+                // console.log(orderSeatList.includes(perSeatName))
+                
+                // console.log('perseat',orderSeatList)
+                
+    
+                const selectSeatContainer = document.getElementById('select-seat-container');
+                const div = document.createElement('div');
+                div.innerHTML = `<div class=" bg-[#F7F8F8] flex justify-between items-center px-5 py-4">
+                                      <h3 class="text-base">${perSeatName}</h3>
+                                      <h3 class="text-base ml-8">Economoy</h3>
+                                      <h3 id="par-seat-price" class="text-base">550</h3>
+                                  </div>`;
+                selectSeatContainer.appendChild(div);
+                allSeatList.classList.remove('bg-gray-200', 'hover:bg-gray-300')
+                allSeatList.classList.add('bg-[#1DD100]', 'text-white');
+                orderSeatList.push(perSeatName);
+            }
+            else{
+                alert('Already 4 seat select !!')
+            }
+
+            count++;
         }
-      count++;
+        
+        
     })
 };
 
